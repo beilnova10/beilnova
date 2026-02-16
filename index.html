@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beilnova | مستقبل عملك الرقمي</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Tajawal', sans-serif; scroll-behavior: smooth; }
+        .bg-navy { background-color: #050a14; } 
+        .text-navy { color: #050a14; }
+        .bg-maroon { background-color: #800000; }
+        .text-maroon { color: #800000; }
+        #contactModal { display: none; }
+        #contactModal.active { display: flex; }
+        /* تم حذف تنسيقات الواتساب */
+    </style>
+</head>
+<body class="bg-white text-gray-900">
+
+    <header class="fixed w-full top-0 bg-white/95 backdrop-blur-md z-50 border-b border-gray-100 shadow-sm">
+        <div class="container mx-auto px-6 py-3 flex justify-between items-center">
+            <div class="flex items-center gap-2">
+                <img src="B.jpg" alt="B.jpg" class="h-12 w-auto object-contain">
+                <span class="text-2xl font-bold text-navy tracking-tighter">BEIL<span class="text-maroon">NOVA</span></span>
+            </div>
+            <button onclick="toggleModal()" class="bg-maroon text-white px-6 py-2 rounded-full font-bold hover:bg-navy transition-all shadow-md">تواصل معنا</button>
+        </div>
+    </header>
+
+    <section class="pt-40 pb-20 px-6 bg-gradient-to-b from-gray-50 to-white text-center">
+        <div class="container mx-auto max-w-4xl">
+            <div class="mb-8 inline-block p-4 bg-navy rounded-3xl shadow-2xl">
+                <img src="B.jpg" alt="Beilnova Hero" class="h-32 mx-auto">
+            </div>
+            <h1 class="text-4xl md:text-6xl font-extrabold text-navy leading-tight mb-6">
+                نصمم لك <span class="text-maroon underline decoration-navy">نظاماً رقمياً</span> يختصر عليك الطريق
+            </h1>
+            <p class="text-lg text-gray-600 mb-10 max-w-2xl mx-auto">
+                بيلنوفا هي شريكك في النجاح. نجمع لك حساباتك، ننظم مبيعاتك، ونبني لك واجهة احترافية تجعل العميل يثق بك من اللحظة الأولى.
+            </p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="#solutions" class="bg-navy text-white px-10 py-4 rounded-2xl font-bold shadow-xl hover:shadow-maroon/20 transition-all">اكتشف حلولنا</a>
+                <button onclick="toggleModal()" class="border-2 border-maroon text-maroon px-10 py-4 rounded-2xl font-bold hover:bg-maroon hover:text-white transition-all">ابدأ مشروعك</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="solutions" class="py-24 px-6">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl font-bold text-navy mb-6 border-r-8 border-maroon pr-4">كيف نسهل لك أعمالك؟</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed italic font-medium">
+                        "نحن نحل مشكلة التشتت الرقمي. بدلاً من أن يضيع العميل بين حساباتك، نحن نجمعهم له في مكان واحد منظم واحترافي."
+                    </p>
+                    <ul class="space-y-6">
+                        <li class="flex gap-4">
+                            <div class="w-12 h-12 bg-maroon text-white rounded-lg flex items-center justify-center shrink-0 shadow-lg"><i class="fas fa-layer-group"></i></div>
+                            <div>
+                                <h4 class="font-bold text-navy text-xl">روابط السوشيال ميديا الموحدة</h4>
+                                <p class="text-sm text-gray-500">صفحة تجمع كل حساباتك (تيك توك، انستا، فيسبوك) برابط واحد احترافي يوضع في البايو.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4">
+                            <div class="w-12 h-12 bg-navy text-white rounded-lg flex items-center justify-center shrink-0 shadow-lg"><i class="fas fa-store"></i></div>
+                            <div>
+                                <h4 class="font-bold text-navy text-xl">مواقع طلبات المتاجر</h4>
+                                <p class="text-sm text-gray-500">نظام بسيط يسمح للزبائن باختيار المنتجات وإرسال الطلب لك بشكل مرتب وبدون تعقيد الرسائل العشوائية.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="bg-gray-100 rounded-[3rem] p-4 shadow-inner relative">
+                    <img src="https://images.unsplash.com/photo-1512428559087-560fa5ceab42?auto=format&fit=crop&q=80&w=800" class="rounded-[2.5rem] shadow-2xl" alt="Solution Mockup">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-20 bg-navy text-white relative overflow-hidden">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-16 underline decoration-maroon underline-offset-8">شاهد قوة التغيير مع بيلنوفا</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-5xl mx-auto">
+                <div class="space-y-4">
+                    <div class="p-2 bg-white/5 rounded-3xl border border-white/10 grayscale opacity-60">
+                        <img src="https://via.placeholder.com/400x250/333/666?text=Old+Design" class="rounded-2xl w-full" alt="Before">
+                    </div>
+                    <p class="text-gray-400 font-bold">عشوائية في التصميم وفقدان للعملاء</p>
+                </div>
+                <div class="space-y-4">
+                    <div class="p-2 bg-white/5 rounded-3xl border-4 border-maroon shadow-[0_0_40px_rgba(128,0,0,0.4)] scale-105">
+                        <img src="https://via.placeholder.com/400x250/0f172a/fff?text=Beilnova+Design" class="rounded-2xl w-full" alt="After">
+                    </div>
+                    <p class="text-maroon font-bold text-xl">احترافية، ثقة، وسهولة في التحويل</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="contactModal" class="fixed inset-0 bg-navy/95 backdrop-blur-xl z-[200] items-center justify-center p-6">
+        <div class="bg-white w-full max-w-md rounded-[3rem] p-10 relative shadow-2xl">
+            <button onclick="toggleModal()" class="absolute top-6 left-6 text-gray-400 hover:text-maroon text-2xl"><i class="fas fa-times"></i></button>
+            <div class="text-center">
+                <img src="B.jpg" alt="Logo" class="h-20 mx-auto mb-6">
+                <h3 class="text-2xl font-bold text-navy mb-8">ابدأ رحلتك معنا الآن</h3>
+                <div class="grid grid-cols-1 gap-4">
+                    <a href="https://m.me/YOUR_PAGE" class="flex items-center justify-between p-5 bg-blue-50 text-blue-700 rounded-2xl hover:bg-blue-600 hover:text-white transition-all font-bold">
+                        <span>ماسنجر فيسبوك</span> <i class="fab fa-facebook-messenger text-2xl"></i>
+                    </a>
+                    <a href="https://instagram.com/YOUR_USER" class="flex items-center justify-between p-5 bg-pink-50 text-pink-700 rounded-2xl hover:bg-gradient-to-r from-purple-500 to-pink-500 hover:text-white transition-all font-bold">
+                        <span>إنستغرام بيلنوفا</span> <i class="fab fa-instagram text-2xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="py-12 bg-white text-center border-t border-gray-100 font-bold">
+        <div class="text-2xl text-navy italic">BEIL<span class="text-maroon">NOVA</span></div>
+        <p class="text-gray-400 text-xs mt-4">نصمم لك المستقبل، اليوم.</p>
+    </footer>
+
+    <script>
+        function toggleModal() {
+            document.getElementById('contactModal').classList.toggle('active');
+        }
+    </script>
+</body>
+</html>
